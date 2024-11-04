@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,60 +5,44 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #333;
-  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
-}
-
-.header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 20px;
+  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
 }
 
-.header-content {
+.container {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px; /* Space between the logo and info section */
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo-image {
-  height: 60px; /* Adjust size as needed */
+.logo-section .logo {
+  height: 100px; /* Adjust the height as needed */
   width: auto;
 }
 
-.title-and-nav {
-  text-align: center;
+.info-section {
+  text-align: left;
 }
 
-.title {
-  font-size: 2.5rem;
+.name {
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
 .nav-links {
   display: flex;
-  gap: 15px;
-  font-size: 1.1rem;
-  justify-content: center;
+  flex-direction: column;
+  gap: 5px; /* Space between links */
 }
 
 .nav-links a {
-  color: #333;
   text-decoration: none;
+  color: #333;
+  font-size: 1rem;
   font-weight: bold;
   transition: color 0.3s;
 }
