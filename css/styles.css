@@ -10,7 +10,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #333;
   line-height: 1.6;
+  background: linear-gradient(to right, #f8f9fa, #eceff1);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .main-header {
@@ -55,7 +57,7 @@ main {
 
 .full-section {
   min-height: 100vh;
-  padding: 60px 20px;
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +76,7 @@ h2 {
 .experience-item, .project-item {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-bottom: 20px;
   width: 80%;
@@ -85,6 +87,7 @@ h2 {
 
 .experience-item:hover, .project-item:hover {
   transform: translateY(-10px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
 }
 
 .skills-list {
