@@ -20,7 +20,7 @@ body {
   background: linear-gradient(to right, #2c3e50, #4ca1af);
   color: white;
   text-align: center;
-  padding: 60px 20px; /* Further reduced padding */
+  padding: 50px 20px; /* Further reduced padding */
 }
 
 .header-content h1 {
@@ -56,7 +56,7 @@ main {
 }
 
 .full-section {
-  min-height: 70vh; /* Further reduced section height */
+  min-height: 15vh; /* Further reduced section height */
   padding: 30px 20px; /* Reduced padding */
   display: flex;
   flex-direction: column;
