@@ -13,24 +13,24 @@ body {
   background: linear-gradient(to right, #f8f9fa, #eceff1);
   overflow-x: hidden;
   scroll-behavior: smooth;
-  margin: 0; /* Ensure no extra body margin */
+  margin: 0;
 }
 
 .main-header {
   background: linear-gradient(to right, #2c3e50, #4ca1af);
   color: white;
   text-align: center;
-  padding: 50px 20px; /* Further reduced padding */
+  padding: 40px 20px; /* Further reduced padding */
 }
 
 .header-content h1 {
   font-size: 3rem;
-  margin-bottom: 5px; /* Reduced bottom margin */
+  margin-bottom: 5px;
 }
 
 .header-content p {
   font-size: 1.3rem;
-  margin-bottom: 15px; /* Reduced bottom margin */
+  margin-bottom: 10px; /* Reduced bottom margin */
 }
 
 .main-nav ul {
@@ -52,24 +52,25 @@ body {
 }
 
 main {
-  margin-top: 5px; /* Further reduced top margin */
+  margin-top: 0; /* Removed extra margin */
 }
 
 .full-section {
-  min-height: 15vh; /* Further reduced section height */
-  padding: 30px 20px; /* Reduced padding */
+  min-height: 50vh; /* Adjusted section height */
+  padding: 20px 20px; /* Reduced padding */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align items to the top */
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   background-color: #f4f4f4;
+  margin-bottom: 10px; /* Added margin-bottom to separate sections slightly */
 }
 
 h2 {
   font-size: 2.2rem;
   color: #2c3e50;
-  margin: 5px 0; /* Reduced vertical margins */
+  margin: 10px 0; /* Adjusted vertical margins */
 }
 
 p {
@@ -81,8 +82,8 @@ p {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 5px;
-  margin-bottom: 5px; /* Reduced bottom margin */
+  padding: 10px; /* Increased padding slightly for readability */
+  margin-bottom: 10px; /* Adjusted bottom margin */
   width: 80%;
   max-width: 800px;
   text-align: left;
@@ -90,8 +91,8 @@ p {
 }
 
 .experience-item:hover, .project-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px); /* Reduced hover transform distance */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .skills-list {
@@ -105,7 +106,7 @@ p {
 .skills-list li {
   background-color: #1abc9c;
   color: white;
-  padding: 10px 5px;
+  padding: 10px 15px;
   border-radius: 20px;
   font-weight: bold;
 }
@@ -114,6 +115,6 @@ footer {
   background-color: #2c3e50;
   color: white;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   font-size: 0.9rem;
 }
