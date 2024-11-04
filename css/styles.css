@@ -13,23 +13,24 @@ body {
   background: linear-gradient(to right, #f8f9fa, #eceff1);
   overflow-x: hidden;
   scroll-behavior: smooth;
+  margin: 0; /* Ensure no extra body margin */
 }
 
 .main-header {
   background: linear-gradient(to right, #2c3e50, #4ca1af);
   color: white;
   text-align: center;
-  padding: 70px 20px; /* Reduced padding for a more compact header */
+  padding: 60px 20px; /* Further reduced padding */
 }
 
 .header-content h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px; /* Reduced bottom margin */
 }
 
 .header-content p {
   font-size: 1.3rem;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduced bottom margin */
 }
 
 .main-nav ul {
@@ -51,29 +52,29 @@ body {
 }
 
 main {
-  margin-top: 10px; /* Reduced top margin to bring sections closer together */
+  margin-top: 5px; /* Further reduced top margin */
 }
 
 .full-section {
-  min-height: 75vh; /* Further reduced height for sections */
-  padding: 40px 20px; /* Reduced padding for tighter spacing */
+  min-height: 70vh; /* Further reduced section height */
+  padding: 30px 20px; /* Reduced padding */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Align items to the top */
   align-items: center;
   text-align: center;
   background-color: #f4f4f4;
-  transition: background-color 0.5s ease-in-out;
 }
 
 h2 {
   font-size: 2.2rem;
   color: #2c3e50;
-  margin-bottom: 10px; /* Reduced margin for tighter spacing */
+  margin: 5px 0; /* Reduced vertical margins */
 }
 
 p {
   font-size: 1.1rem;
+  margin: 5px 0; /* Reduced vertical margins */
 }
 
 .experience-item, .project-item {
@@ -81,7 +82,7 @@ p {
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin-bottom: 10px; /* Reduced margin between items */
+  margin-bottom: 5px; /* Reduced bottom margin */
   width: 80%;
   max-width: 800px;
   text-align: left;
