@@ -20,7 +20,7 @@ body {
   background: linear-gradient(to right, #2c3e50, #4ca1af);
   color: white;
   text-align: center;
-  padding: 40px 20px; /* Further reduced padding */
+  padding: 40px 20px; /* Reduced padding further */
 }
 
 .header-content h1 {
@@ -52,19 +52,15 @@ body {
 }
 
 main {
-  margin-top: 0; /* Removed extra margin */
+  margin-top: 0;
 }
 
 .full-section {
-  min-height: 50vh; /* Adjusted section height */
+  min-height: auto; /* Removed fixed height */
   padding: 20px 20px; /* Reduced padding */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
+  display: block; /* Removed flex properties */
   background-color: #f4f4f4;
-  margin-bottom: 10px; /* Added margin-bottom to separate sections slightly */
+  margin-bottom: 5px; /* Added small margin between sections */
 }
 
 h2 {
@@ -75,24 +71,18 @@ h2 {
 
 p {
   font-size: 1.1rem;
-  margin: 5px 0; /* Reduced vertical margins */
+  margin: 5px 0;
 }
 
 .experience-item, .project-item {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 10px; /* Increased padding slightly for readability */
-  margin-bottom: 10px; /* Adjusted bottom margin */
+  padding: 10px; /* Adjusted padding */
+  margin-bottom: 10px; /* Adjusted margin */
   width: 80%;
   max-width: 800px;
   text-align: left;
-  transition: transform 0.3s ease;
-}
-
-.experience-item:hover, .project-item:hover {
-  transform: translateY(-5px); /* Reduced hover transform distance */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .skills-list {
