@@ -19,7 +19,7 @@ body {
   background: linear-gradient(to right, #2c3e50, #4ca1af);
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 20px; /* Reduced padding for a more compact look */
   position: relative;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .header-content p {
-  font-size: 1.2rem;
+  font-size: 1.3rem; /* Slightly increased font size for better readability */
   margin-bottom: 20px;
 }
 
@@ -56,8 +56,8 @@ main {
 }
 
 .full-section {
-  min-height: 100vh;
-  padding: 80px 20px;
+  min-height: 80vh; /* Reduced height for sections */
+  padding: 50px 20px; /* Reduced padding to bring sections closer together */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,9 +68,13 @@ main {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem; /* Slightly smaller font size for a more balanced look */
   color: #2c3e50;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduced margin for tighter spacing */
+}
+
+p {
+  font-size: 1.1rem; /* Increased font size for paragraph text */
 }
 
 .experience-item, .project-item {
@@ -78,7 +82,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduced margin between items */
   width: 80%;
   max-width: 800px;
   text-align: left;
