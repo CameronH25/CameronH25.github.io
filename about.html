@@ -30,15 +30,28 @@
             gap: 20px;
         }
         .grid-item {
-            border: 1px solid #ccc;
-            padding: 20px;
-            text-align: center;
+            position: relative;
             border-radius: 5px;
-            background-color: #f9f9f9;
-            transition: transform 0.3s;
+            overflow: hidden;
         }
-        .grid-item:hover {
-            transform: translateY(-5px);
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make text readable */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
         }
     </style>
 </head>
@@ -60,12 +73,30 @@
     <div class="section-container">
         <h2>About Me</h2>
         <div class="grid-container">
-            <div class="grid-item">My Life</div>
-            <div class="grid-item">Philosophy</div>
-            <div class="grid-item">Film</div>
-            <div class="grid-item">Chess</div>
-            <div class="grid-item">Mathematics</div>
-            <div class="grid-item">Languages</div>
+            <div class="grid-item">
+                <img src="path/to/your-image1.jpg" alt="My Life">
+                <div class="overlay">My Life</div>
+            </div>
+            <div class="grid-item">
+                <img src="images/philosophy.jpg" alt="Philosophy">
+                <div class="overlay">Philosophy</div>
+            </div>
+            <div class="grid-item">
+                <img src="path/to/your-image3.jpg" alt="Film">
+                <div class="overlay">Film</div>
+            </div>
+            <div class="grid-item">
+                <img src="path/to/your-image4.jpg" alt="Chess">
+                <div class="overlay">Chess</div>
+            </div>
+            <div class="grid-item">
+                <img src="path/to/your-image5.jpg" alt="Mathematics">
+                <div class="overlay">Mathematics</div>
+            </div>
+            <div class="grid-item">
+                <img src="path/to/your-image6.jpg" alt="Languages">
+                <div class="overlay">Languages</div>
+            </div>
         </div>
     </div>
 
@@ -75,3 +106,4 @@
     </footer>
 </body>
 </html>
+
