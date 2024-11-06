@@ -9,8 +9,36 @@
     <!-- Google Fonts (Alegreya) -->
     <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
     <style>
-        p {
-          font-family: 'Alegreya', serif;
+        body {
+            font-family: 'Alegreya', serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .section-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            transition: transform 0.3s;
+        }
+        .grid-item:hover {
+            transform: translateY(-5px);
         }
     </style>
 </head>
@@ -31,8 +59,14 @@
     <!-- About Page Content -->
     <div class="section-container">
         <h2>About Me</h2>
-        <p>I am an autodidact in Philosophy and Politics.</p>
-        <p>I have extensive readings on Philosophers such as: Friedrich Nietzsche, Søren Kierkegaard, Johann Fichte, Ludwig Feuerbach, Arthur Schopenhauer, Georg Hegel, Karl Marx, John Stuart Mill, and many others.</p>
+        <div class="grid-container">
+            <div class="grid-item">My Life</div>
+            <div class="grid-item">Philosophy</div>
+            <div class="grid-item">Film</div>
+            <div class="grid-item">Chess</div>
+            <div class="grid-item">Mathematics</div>
+            <div class="grid-item">Languages</div>
+        </div>
     </div>
 
     <!-- Footer -->
